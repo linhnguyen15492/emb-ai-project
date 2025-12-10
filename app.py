@@ -1,5 +1,5 @@
 # Imports the Google Cloud client library.
-from google.cloud import language_v1
+from google.cloud import language_v1  # type: ignore
 
 # Instantiates a client.
 client = language_v1.LanguageServiceClient()
