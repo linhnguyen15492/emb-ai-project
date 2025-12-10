@@ -7,7 +7,7 @@ app = Flask("Emotion Detector")
 
 
 @app.route("/emotionDetector")
-def sent_detector():
+async def sent_detector():
     """
     route to receive text to analyze emotion
     """
@@ -33,7 +33,7 @@ def sent_detector():
 
 
 @app.route("/")
-def render_index_page():
+async def render_index_page():
     """
     render main page of the web application
     """
